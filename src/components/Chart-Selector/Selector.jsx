@@ -1,3 +1,5 @@
+// Disabled until API includes daily totals for countries.
+
 import React from 'react'
 
 import { Checkbox, FormControlLabel } from '@material-ui/core'

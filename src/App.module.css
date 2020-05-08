@@ -10,9 +10,20 @@ body {
 }
 
 .image {
-    width: 200px;
+    width: 100px;
     margin-top: 50px;
 }
+.text {
+  padding-top: 30px;
+}
+
+.twitter {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 @media only screen and (max-width: 770px) {
     .container {
@@ -20,6 +31,6 @@ body {
     }
   
     .image {
-      width: 100%;
+      width: 100px;
     }
   }
