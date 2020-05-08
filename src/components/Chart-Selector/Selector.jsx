@@ -17,7 +17,7 @@ const Selector = ({graph, handleGraphChange}) => {
                     color="primary"
                 />
             }
-            label="Bar Graph View"/>
+            label="View bar graph"/>
         </div>
     )
 }
