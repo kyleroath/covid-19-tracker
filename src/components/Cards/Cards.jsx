@@ -45,6 +45,17 @@ const Cards = ({ data: {confirmed, recovered, deaths, lastUpdate}}) => {
                         <Typography variant="body2">Number of deaths caused by COVID-19</Typography>
                     </CardContent>
                 </Grid>
+                <Grid item component={Card} xs={12} md={2} className={cx(styles.card, styles.percentages)}>
+                    <CardContent>
+                        <Typography color="textSecondary" gutterBottom>Death Percentage</Typography>
+                        <Typography variant="h5">
+                            <CountUp  start={0} end={(100 * deaths.value) / confirmed.value} duration={2.5} separator="," />%
+                            {/* {`${Math.round((100 * deaths.value) / confirmed.value)}%`}  */}
+                        </Typography>
+                        <Typography color="textPrimary">as of {new Date(lastUpdate).toDateString()}</Typography> 
+                        <Typography variant="body2">The percentage of deaths from infections</Typography>
+                    </CardContent>
+                </Grid>
             </Grid>
         </div>
     )
